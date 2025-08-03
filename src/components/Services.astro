@@ -1,0 +1,105 @@
+---
+// Services section component
+const services = [
+  {
+    title: "Product Design",
+    description: "Understanding user behavior to create intuitive, effective experiences.",
+    icon: "🎨",
+    color: "from-purple-500 to-pink-500"
+  },
+  {
+    title: "UX/UI Design",
+    description: "Crafting responsive, conversion-focused websites that put users first.",
+    icon: "💻",
+    color: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Mobile Applications",
+    description: "Building custom mobile apps that solve real business problems.",
+    icon: "📱",
+    color: "from-green-500 to-emerald-500"
+  },
+  {
+    title: "Development",
+    description: "Engineering scalable web and backend solutions tailored to your goals.",
+    icon: "⚡",
+    color: "from-yellow-500 to-orange-500"
+  },
+  {
+    title: "Video Editing",
+    description: "Shaping raw footage into compelling narratives that keep viewers glued.",
+    icon: "🎬",
+    color: "from-red-500 to-pink-500"
+  },
+  {
+    title: "Branding",
+    description: "Creating distinctive identities that resonate and build lasting loyalty.",
+    icon: "🏆",
+    color: "from-indigo-500 to-purple-500"
+  },
+  {
+    title: "Motion Design",
+    description: "Animating ideas into motion that captivates and clearly tells your story.",
+    icon: "🎭",
+    color: "from-teal-500 to-green-500"
+  }
+];
+---
+
+<section id="services" class="py-24 bg-gradient-to-b from-black to-gray-900">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-6xl font-black mb-6">
+        Our <span class="gradient-text">Services</span>
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        We offer comprehensive digital solutions that transform your vision into compelling experiences.
+      </p>
+    </div>
+    
+    <!-- Services grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <div class="group relative bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover-lift transition-all duration-500 hover:border-green-500/50">
+          <!-- Service icon -->
+          <div class={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} mb-6 text-2xl`}>
+            {service.icon}
+          </div>
+          
+          <!-- Service content -->
+          <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-green-400 transition-colors duration-300">
+            {service.title}
+          </h3>
+          <p class="text-gray-300 leading-relaxed mb-6">
+            {service.description}
+          </p>
+          
+          <!-- Read more link -->
+          <a href="#" class="inline-flex items-center text-green-400 hover:text-green-300 font-semibold transition-colors duration-300">
+            Learn more
+            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          
+          <!-- Hover effect overlay -->
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+        </div>
+      ))}
+    </div>
+    
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <a 
+        href="#contact" 
+        class="inline-flex items-center bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-400 hover:to-blue-400 text-black px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
+      >
+        View All Services
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

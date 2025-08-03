@@ -1,0 +1,87 @@
+---
+// Hero section component
+---
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+  <!-- Background blobs -->
+  <div class="blob-1 top-1/4 left-1/4"></div>
+  <div class="blob-2 bottom-1/4 right-1/4"></div>
+  
+  <!-- Main content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <!-- Pre-headline -->
+    <div class="mb-8">
+      <span class="inline-block px-4 py-2 bg-gray-800/50 rounded-full text-sm text-gray-300 border border-gray-700">
+        Digital Excellence Since 2016
+      </span>
+    </div>
+    
+    <!-- Main headline -->
+    <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-8">
+      Turning
+      <br>
+      <span class="gradient-text">Vision</span>
+      <br>
+      Into
+      <br>
+      <span class="gradient-text">Voltage</span>
+    </h1>
+    
+    <!-- Subtitle -->
+    <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed">
+      In a world of digital noise, we create signal. Our work cuts through the chaos 
+      with strategic clarity and creative courage, transforming passive viewers into 
+      active participants in your brand's journey.
+    </p>
+    
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <a 
+        href="#contact" 
+        class="bg-green-500 hover:bg-green-400 text-black px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
+      >
+        Start a project
+      </a>
+      <a 
+        href="#services" 
+        class="border border-gray-600 hover:border-green-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:bg-green-500/10"
+      >
+        Learn more
+      </a>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg 
+        class="w-6 h-6 text-gray-400" 
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </div>
+  
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-80 h-80 border border-gray-800 rounded-full opacity-20"></div>
+    <div class="absolute -bottom-40 -left-40 w-80 h-80 border border-gray-800 rounded-full opacity-20"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-gray-800 rounded-full opacity-10"></div>
+  </div>
+</section>
+
+<style>
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.3); 
+    }
+    50% { 
+      box-shadow: 0 0 40px rgba(0, 255, 136, 0.6), 0 0 60px rgba(0, 255, 136, 0.3); 
+    }
+  }
+  
+  .hover-glow:hover {
+    animation: pulse-glow 2s infinite;
+  }
+</style>

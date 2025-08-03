@@ -1,0 +1,82 @@
+---
+// CTA section component
+---
+
+<section id="contact" class="py-24 bg-black relative overflow-hidden">
+  <!-- Background elements -->
+  <div class="absolute inset-0">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-green-500/10 rounded-full filter blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- Moving text banner -->
+    <div class="overflow-hidden mb-16">
+      <div class="moving-text whitespace-nowrap text-6xl md:text-8xl font-black text-gray-800 uppercase">
+        LET'S COLLABORATE • LET'S COLLABORATE • LET'S COLLABORATE • LET'S COLLABORATE • LET'S COLLABORATE • LET'S COLLABORATE •
+      </div>
+    </div>
+    
+    <!-- Main CTA content -->
+    <div class="text-center max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-6xl font-black mb-8">
+        Let's see if we are a 
+        <br>
+        <span class="gradient-text">good fit</span>
+      </h2>
+      
+      <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+        Ready to transform your digital presence? Let's discuss how we can bring your vision to life.
+      </p>
+      
+      <!-- Contact options -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Start a project -->
+        <div class="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover-lift transition-all duration-500 hover:border-green-500/50">
+          <h3 class="text-2xl font-bold mb-4">Start a project</h3>
+          <p class="text-gray-300 mb-6">Ready to begin? Let's discuss your next digital venture.</p>
+          <a 
+            href="mailto:hello@fundamental.bg" 
+            class="inline-flex items-center bg-green-500 hover:bg-green-400 text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+          >
+            hello@fundamental.bg
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Work with us -->
+        <div class="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover-lift transition-all duration-500 hover:border-blue-500/50">
+          <h3 class="text-2xl font-bold mb-4">Work with us</h3>
+          <p class="text-gray-300 mb-6">Interested in joining our team? We'd love to hear from you.</p>
+          <a 
+            href="mailto:hr@fundamental.bg" 
+            class="inline-flex items-center bg-blue-500 hover:bg-blue-400 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+          >
+            hr@fundamental.bg
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact info -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h4 class="font-semibold mb-2">Email</h4>
+          <p class="text-gray-300">hello@fundamental.bg</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Phone</h4>
+          <p class="text-gray-300">+359 895 69 74 10</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Address</h4>
+          <p class="text-gray-300">70-72 Cherni vrah Blvd.<br>Sofia, Bulgaria</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
